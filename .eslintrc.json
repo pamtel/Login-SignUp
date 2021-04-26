@@ -1,0 +1,41 @@
+{
+    "extends": "airbnb-base",
+    "settings": {
+        "import/resolver": {
+            "alias": [
+                [
+                    "helper",
+                    "./src/helpers"
+                ]
+            ]
+        }
+    },
+    "rules": {
+        "semi": [2, "never"],
+        "max-len": [2, 100, 4, {"ignoreUrls": true}],
+        "comma-dangle": [2, "never"]
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "es6": true
+        }
+    },
+    "plugins": [
+        "import"
+    ],
+    "globals": {
+        "window": true,
+        "location": true,
+        "localStorage": true,
+        "expect": true,
+        "jest": true,
+        "document": true
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+        "mocha": true,
+        "jquery": true
+    }
+}
